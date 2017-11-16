@@ -8,6 +8,6 @@ int __cxa_guard_acquire(__guard *);
 void __cxa_guard_release (__guard *);
 void __cxa_guard_abort (__guard *);
 
-void *__dso_handle = NULL;
+extern void *__dso_handle;
 
 #endif /* SYSCALLS_CPP_HPP_ */
