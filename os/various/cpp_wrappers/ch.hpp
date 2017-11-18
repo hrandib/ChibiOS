@@ -412,7 +412,7 @@ namespace chibios_rt {
      */
     ThreadReference(thread_t *tp) : thread_ref(tp) {
 
-    };
+    }
 
     /**
      * @brief   Stops the thread.
@@ -531,6 +531,8 @@ namespace chibios_rt {
 
 #if CH_CFG_USE_DYNAMIC || defined(__DOXYGEN__)
 #endif /* CH_CFG_USE_DYNAMIC */
+    virtual ~ThreadReference()
+    {  }
   };
 
   /*------------------------------------------------------------------------*
