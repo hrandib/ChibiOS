@@ -88,7 +88,36 @@
 *** Releases and Change Log                                               ***
 *****************************************************************************
 
+*** 17.6.5 ***
+- HAL: Fixed USB Serial driver problem with zero-size OUT transactions
+       (bug #933).
+- HAL: Fixed race condition in STM32 QSPI driver (bug #932).
+- HAL: Fixed silence GCC 7.3.0 warning (bug #930).
+- HAL: Fixed invalid SAI1 clock selection on STM32F7xx (bug #929).
+- HAL: Fixed useless writes in read-only CFGR_SWS field on all STM32Fxx
+       (bug #927).
+
 *** 17.6.4 ***
+- Fixed some minor documentation issues.
+- NEW: Improved external tools launch configuration for OpenOCD.
+- HAL: Fixed USB driver not stopped (bug #924).
+- HAL: Fixed I2C address not accepted (bug #923).
+- HAL: Fixed wrong DMA settings for STM32F76x I2C3 and I2C4 (bug #920).
+- HAL: Fixed wrong flash waiting state for STM32F7xx (bug #918).
+- LIB: Fixed heap allocator failing on simulators (bug #917).
+- STP: Fixed CRT0_FORCE_MSP_INIT flag not defaulted in crt0_v7m.S (bug #916).
+- EX:  Improved MEMS drivers (bug #915).
+- HAL: Improved peripheral classes (bug #915).
+- HAL: Fixed more instances of bug #843 (bug #914).
+- HAL: Fixed STM32 SDMMCv1 driver not setting DMA channel properly for SDCD2
+       instance (bug #912).
+- RT:  Fixed compile error with assertions enabled and dynamic extensions
+       disabled (bug #909).
+- HAL: Fixed compile error HAL UART without WAIT (bug #908).
+- RT:  Fixed gcc7 implicit-fallthrough (bug #906).
+- HAL: Fixed gcc7 implicit-fallthrough (bug #906).
+- HAL: Fixed DAC CH2 marked as not present in STM32F091 registry (bug #905).
+- LIB: Fixed chHeapGetSize value is not obtained from the header (bug #904).
 - HAL: Fixed ADC does not build on STM32F030 (bug #903).
 - LIB: Fixed typo for function evtStop (bug #897).
 
