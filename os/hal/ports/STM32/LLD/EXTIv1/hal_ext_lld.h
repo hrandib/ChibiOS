@@ -122,6 +122,9 @@ struct EXTDriver {
    */
   const EXTConfig           *config;
   /* End of the mandatory fields.*/
+#if defined(EXTI_DRIVER_EXT_FIELDS)
+  EXTI_DRIVER_EXT_FIELDS
+#endif
 };
 
 /*===========================================================================*/
